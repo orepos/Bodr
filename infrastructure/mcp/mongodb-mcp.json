@@ -1,0 +1,10 @@
+{
+  "name": "mongodb-mcp",
+  "description": "MongoDB MCP server configuration for Bodr server tools",
+  "command": "npx",
+  "args": ["-y", "mongodb-mcp-server"],
+  "env": {
+    "MONGODB_URI": "${MONGODB_URI}",
+    "MONGODB_DATABASE": "${MONGODB_DATABASE}"
+  }
+}

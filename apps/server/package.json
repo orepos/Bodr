@@ -1,0 +1,14 @@
+{
+  "name": "@bodr/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
+    "test": "pnpm run build && node --test dist/tests/fanPassManifest.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.1",
+    "typescript": "6.0.3"
+  }
+}
